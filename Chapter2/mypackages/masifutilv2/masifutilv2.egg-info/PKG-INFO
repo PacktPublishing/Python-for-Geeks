@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: masifutilv2
+Version: 0.1.0
+Summary: A sample package for illustration purposes
+Home-page: http://pypi.python.org/pypi/PackageName/
+Author: Muhammad Asif
+Author-email: ma@example.com
+License: LICENSE.txt
+Description: # A sample package project
+        
+        ![Python Logo](https://www.python.org/static/community_logos/python-logo.png "Sample inline image")
+        
+        A sample project to build a package and then deploy it using different approaches
+        
+Platform: UNKNOWN
+Requires-Python: >=3.5, <4

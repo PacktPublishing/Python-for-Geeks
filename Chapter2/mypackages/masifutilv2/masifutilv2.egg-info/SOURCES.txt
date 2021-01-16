@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+masifutil/__init__.py
+masifutil/mycalculator.py
+masifutil/myrandom.py
+masifutil/advcalc/__init__.py
+masifutil/advcalc/advcalculator.py
+masifutilv2.egg-info/PKG-INFO
+masifutilv2.egg-info/SOURCES.txt
+masifutilv2.egg-info/dependency_links.txt
+masifutilv2.egg-info/top_level.txt
