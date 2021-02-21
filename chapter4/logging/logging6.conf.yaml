@@ -1,0 +1,26 @@
+version: 1
+formatters:
+  console_formatter:
+    format: '%(name)s - %(levelname)s - %(message)s'
+  file_formatter:
+      format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+handlers:
+  console_handler:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: console_formatter
+    stream: ext://sys.stdout
+
+  file_handler:
+    class: logging.FileHandler
+    level: INFO
+    formatter: file_formatter
+    filename: logs/logging6.log
+loggers:
+  my_logger:
+    level: DEBUG
+    handlers: [console_handler, file_handler]
+    propagate: no
+root:
+  level: ERROR
+  handlers: [console_handler]

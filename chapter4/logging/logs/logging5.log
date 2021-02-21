@@ -1,0 +1,3 @@
+2021-02-02 17:57:27,716 - my_logger - ERROR - This is an error message
+2021-02-02 17:57:27,716 - my_logger - WARNING - This is a warning message
+2021-02-02 17:57:27,716 - my_logger - INFO - This is a info message

@@ -1,0 +1,4 @@
+Iteration is one of the key tools used for data processing and data transformation.
+The iterations are especially useful when dealing with large datasets and bringing
+the whole dataset into the memory is not possible or efficient. Iterators provide
+a way to bring the data into memory one item at a time.
