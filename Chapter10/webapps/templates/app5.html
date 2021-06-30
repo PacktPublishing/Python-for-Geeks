@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students from database</title>
+</head>
+<body>
+<h2>Students</h2>
+    {% if students|length > 0 %}
+        <table>
+            <thead>
+              <tr>
+                <th scope="col">SNo</th>
+                <th scope="col">name</th>
+                <th scope="col">grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for student in students %}
+                <tr>
+                    <td scope="row">{{student.id}}</td>
+                    <td>{{student.name}}</td>
+                    <td>{{student.grade}}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+</body>
+</html>
