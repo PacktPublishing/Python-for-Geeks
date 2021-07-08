@@ -1,0 +1,6 @@
+asgiref==3.4.1
+Django==3.2.5
+django-rest-framework==0.1.0
+djangorestframework==3.12.4
+pytz==2021.1
+sqlparse==0.4.1
