@@ -1,0 +1,3 @@
+python-http-client==3.3.2
+sendgrid==6.7.1
+starkbank-ecdsa==1.1.1
