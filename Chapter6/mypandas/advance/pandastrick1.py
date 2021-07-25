@@ -17,6 +17,7 @@ df.replace("Sunny","Sun",inplace=True)
 
 #Replacing strings starting with Cl with Cloud across DF
 df.replace(to_replace="^Cl.*",value="Cloud", inplace=True,regex=True)
+#df['condition'].replace(to_replace="^Cl.*",value="Cloud", inplace=True,regex=True)
 
 #Replacing Day names using a list across DF
 df.replace(["Monday","Tuesday"],["monday","tuesday"], inplace=True)
