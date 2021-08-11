@@ -1,0 +1,9 @@
+<config xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0">
+ <interface-configurations xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ifmgr-cfg">
+   <interface-configuration>
+    <active>act</active>
+    <interface-name>{int_name}</interface-name>
+    <description>{int_desc}</description>
+   </interface-configuration>
+ </interface-configurations>
+</config>
