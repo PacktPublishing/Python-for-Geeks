@@ -9,9 +9,9 @@ def my_main( ):
     sum = mycalculator.add(x, y)
     diff = mycalculator.subtract(x, y)
 
-    print("x = { }, y = { }".format(x, y))
-    print("sum is { }".format(sum))
-    print("diff is { }".format(diff))
+    print("x = {}, y = {}".format(x, y))
+    print("sum is {}".format(sum))
+    print("diff is {}".format(diff))
 
 """ This is executed only if the special variable '__name__' is set as main"""
 if __name__ == "__main__":
