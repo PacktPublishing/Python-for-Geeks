@@ -13,9 +13,9 @@ def my_calc():
 @pytest.fixture
 def data_set(request):
     dict = {'x':10, 'y':5}
-    def delete_dict():
-        del dict
-    request.addfinalizer(delete_dict)
+    def delete_dict(obj):
+        del obj
+    request.addfinalizer(lambda: delete_dict(dict))
     return dict
 
 def test_add(my_calc, data_set):
