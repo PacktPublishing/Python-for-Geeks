@@ -10,19 +10,23 @@ def inc_sum_list(list, inc_list, sum):
         inc_list[index] = num + 1
         sum.value = sum.value + inc_list[index]
 
+def main():
 
-mylist = [2, 5, 7]
+    mylist = [2, 5, 7]
 
-inc_list = multiprocessing.Array('i', 3)
+    inc_list = multiprocessing.Array('i', 3)
 
-sum = multiprocessing.Value('i')
+    sum = multiprocessing.Value('i')
 
-p = Process(target=inc_sum_list,
-            args=(mylist, inc_list, sum))
+    p = Process(target=inc_sum_list,
+                args=(mylist, inc_list, sum))
 
-p.start()
-p.join()
-print("incremented list: ", list(inc_list))
-print("sum of inc list: ", sum.value)
+    p.start()
+    p.join()
+    print("incremented list: ", list(inc_list))
+    print("sum of inc list: ", sum.value)
 
-print("Exiting the main process")
+    print("Exiting the main process")
+
+if __name__ == '__main__':
+    main()

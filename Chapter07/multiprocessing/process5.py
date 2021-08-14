@@ -11,16 +11,20 @@ def output(myqueue):
     while not myqueue.empty():
         print(myqueue.get())
 
-mylist = [2, 5, 7]
-myqueue = Queue()
+def main():
+    mylist = [2, 5, 7]
+    myqueue = Queue()
 
-p1 = Process(target=copy_data, args=(mylist, myqueue))
-p2 = Process(target=output, args=(myqueue,))
+    p1 = Process(target=copy_data, args=(mylist, myqueue))
+    p2 = Process(target=output, args=(myqueue,))
 
-p1.start()
-p1.join()
-p2.start()
-p2.join()
+    p1.start()
+    p1.join()
+    p2.start()
+    p2.join()
 
-print("Queue is empty: ",myqueue.empty())
-print("Exiting the main process")
+    print("Queue is empty: ",myqueue.empty())
+    print("Exiting the main process")
+
+if __name__ == '__main__':
+    main()

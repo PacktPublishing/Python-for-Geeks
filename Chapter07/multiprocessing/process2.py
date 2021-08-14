@@ -7,9 +7,14 @@ def print_message(msg):
     sleep(1)
     print("{}-{}: {}".format(os.getpid(), cp().name, msg))
 
-# creating process from a pool
-with Pool(3) as proc:
-    proc.map(print_message, ["Orange", "Apple", "Banana",
-                             "Grapes","Pears"])
 
-print("Exiting the main process")
+def main():
+    # creating process from a pool
+    with Pool(3) as proc:
+        proc.map(print_message, ["Orange", "Apple", "Banana",
+                                 "Grapes","Pears"])
+
+    print("Exiting the main process")
+
+if __name__ == '__main__':
+    main()

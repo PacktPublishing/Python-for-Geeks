@@ -15,15 +15,20 @@ def myreceiver(r_conn):
             break
         print("Received message : ", msg)
     r_conn.close()
-sender_conn, receiver_conn= Pipe()
 
-p1 = Process(target=mysender, args=(sender_conn, ))
-p2 = Process(target=myreceiver, args=(receiver_conn,))
+def main():
+    sender_conn, receiver_conn= Pipe()
 
-p1.start()
-p2.start()
+    p1 = Process(target=mysender, args=(sender_conn, ))
+    p2 = Process(target=myreceiver, args=(receiver_conn,))
 
-p1.join()
-p2.join()
+    p1.start()
+    p2.start()
 
-print("Exiting the main process")
+    p1.join()
+    p2.join()
+
+    print("Exiting the main process")
+
+if __name__ == '__main__':
+    main()

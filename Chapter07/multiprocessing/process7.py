@@ -9,10 +9,14 @@ def printme (lock, msg):
     finally:
         lock.release()
 
-with Pool(3) as proc:
-    lock = Manager().Lock()
-    func = partial(printme,lock)
-    proc.map(func, ["Orange", "Apple", "Banana",
-                             "Grapes","Pears"])
+def main():
+    with Pool(3) as proc:
+        lock = Manager().Lock()
+        func = partial(printme,lock)
+        proc.map(func, ["Orange", "Apple", "Banana",
+                                 "Grapes","Pears"])
 
-print("Exiting the main process")
+    print("Exiting the main process")
+
+if __name__ == '__main__':
+    main()

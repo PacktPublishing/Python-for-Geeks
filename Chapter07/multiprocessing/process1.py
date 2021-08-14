@@ -12,20 +12,24 @@ def print_message(msg):
     sleep(1)
     print("{}-{}: {}".format(os.getpid(), cp().name, msg))
 
-processes = []
+def main():
+    processes = []
 
-# creating process
-processes.append(Process(target=print_hello, name="Process 1"))
-processes.append(Process(target=print_hello, name="Process 2"))
-processes.append(Process(target=print_message,
-                         args=["Good morning"], name="Process 3"))
+    # creating process
+    processes.append(Process(target=print_hello, name="Process 1"))
+    processes.append(Process(target=print_hello, name="Process 2"))
+    processes.append(Process(target=print_message,
+                             args=["Good morning"], name="Process 3"))
 
-# start the process
-for p in processes:
-    p.start()
+    # start the process
+    for p in processes:
+        p.start()
 
-# wait till all are done
-for p in processes:
-    p.join()
+    # wait till all are done
+    for p in processes:
+        p.join()
 
-print("Exiting the main process")
+    print("Exiting the main process")
+
+if __name__ == '__main__':
+    main()
