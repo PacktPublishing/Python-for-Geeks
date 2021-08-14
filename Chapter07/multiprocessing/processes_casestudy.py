@@ -52,4 +52,6 @@ def main ():
 
     print(f'Time taken to download: {total_exec_time:.2f} seconds')
 
-main()
+
+if __name__ == '__main__':
+    main()
