@@ -2,6 +2,7 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
+import os
 
 app = Flask(__name__)
 api = Api(app)
