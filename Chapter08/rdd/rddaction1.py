@@ -12,13 +12,13 @@ data = [5, 4, 6, 3, 2, 8, 9, 2, 8, 7,
         8, 4, 4, 8, 2, 7, 8, 9, 6, 9]
 rdd1 = spark.sparkContext.parallelize(data)
 
-print("RDD contents with partitions: "+rdd1.glom().collect())
-print("Count by values: "+rdd1.countByValue())
-print("reduce function"+rdd1.reduce(lambda a,b: a+b))
-print("Sum of RDD contents"+rdd1.sum())
-print(""+rdd1.top(5))
-print(rdd1.count())
-print(rdd1.max())
-print(rdd1.min())
+print("RDD contents with partitions:" + str(rdd1.glom().collect()))
+print("Count by values: " +str(rdd1.countByValue()))
+print("reduce function: " + str(rdd1.glom().collect()))
+print("Sum of RDD contents:"+str(rdd1.sum()))
+print("top: " + str(rdd1.top(5)))
+print("count: " + str(rdd1.count()))
+print("max: "+ str(rdd1.max()))
+print("min" + str(rdd1.min()))
 
 time.sleep(60)
