@@ -1,9 +1,9 @@
 import paramiko
 
-ip='172.16.2.50'
+ip='172.16.1.34'
 port=22
 username='root'
-password='rootroot'
+password='xxxx'
 
 
 cmd= 'show ip interface brief \n'
