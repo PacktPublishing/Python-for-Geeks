@@ -2,9 +2,9 @@ from netmiko import ConnectHandler
 
 cisco_rtr = {
     "device_type": "cisco_ios",
-    "host": "172.16.2.50",
+    "host": "172.16.2.34",
     "username": "root",
-    "password": "rootroot",
+    "password": "xxxxx",
 }
 
 def main():
