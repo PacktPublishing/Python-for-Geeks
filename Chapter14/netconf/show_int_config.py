@@ -9,7 +9,7 @@ interface_filter = """
 </filter>
 """
 
-with manager.connect(host='172.16.2.50', username='root', password='rootroot', hostkey_verify=False) as conn:
+with manager.connect(host='172.16.2.34', username='root', password='xxxx', hostkey_verify=False) as conn:
 
     filter = interface_filter.format(int_name = "MgmtEth0/RP0/CPU0/0")
     result = conn.get_config("running", filter )
