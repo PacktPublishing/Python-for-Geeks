@@ -8,7 +8,7 @@ headers = {
     'Authorization': 'Bearer {}'.format(token)
 }
 
-url1 = "https://10.52.90.90:8443/nfm-p/rest/api/v1/managedobjects/searchWithFilter"
+url1 = "https://10.52.90.110:8443/nfm-p/rest/api/v1/managedobjects/searchWithFilter"
 payload1 = json.dumps({
   "fullClassName": "equipment.PhysicalPort",
   "filterExpression": "siteId = '10.172.172.172' AND portName='1/1/1'",
@@ -27,7 +27,7 @@ payload2 = json.dumps({
   }
 })
 
-url2 = "https://10.52.90.90:8443/nfm-p/rest/api/v1/managedobjects/"+port_ofn
+url2 = "https://10.52.90.110:8443/nfm-p/rest/api/v1/managedobjects/"+port_ofn
 
 response = requests.request("PUT", url2, headers=headers, data=payload2, verify=False)
 
