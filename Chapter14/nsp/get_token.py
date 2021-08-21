@@ -14,7 +14,7 @@ headers = {
     'Authorization': 'Basic {}'.format(str(basic_token, 'UTF-8'))
 }
 
-url = "https://10.52.90.101/rest-gateway/rest/api/v1/auth/token"
+url = "https://10.52.90.10/rest-gateway/rest/api/v1/auth/token"
 resp = requests.request("POST", url, headers=headers,
                         data=payload, verify=False)
 token = resp.json()["access_token"]
