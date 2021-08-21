@@ -3,7 +3,7 @@ import json
 
 def main():
     driver = get_network_driver('iosxr')
-    device = driver('172.16.2.50', 'root', 'rootroot')
+    device = driver('172.16.2.34', 'root', 'xxxx')
 
     try:
         device.open()
