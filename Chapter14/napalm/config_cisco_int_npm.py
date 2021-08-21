@@ -4,7 +4,7 @@ import json
 def main():
 
     driver = get_network_driver('iosxr')
-    device = driver('172.16.2.50', 'root', 'rootroot')
+    device = driver('172.16.2.34', 'root', 'xxxxx')
     try:
         device.open()
         device.load_merge_candidate(config='interface Lo0 \n description napalm added new desc \n end\n')
