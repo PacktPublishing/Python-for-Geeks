@@ -14,6 +14,6 @@ def handle_storage_event(event, context):
                     
   mail = Mail(from_email, to_emails, subject, content)
   sg = SendGridAPIClient()
-
+  response = sg.send(mail)
   print(response.status_code) # for logging purpose
   print(response.headers)
