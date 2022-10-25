@@ -67,3 +67,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 **Muhammad Asif**
 is a principal solution architect with a wide range of multi-disciplinary experience in web development, network and cloud automation, virtualization, and machine learning. With a strong multi-domain background, he has led many large-scale projects to successful deployment in production environments. Although moving to more leadership roles in recent years, Muhammad has always enjoyed solving real world problems by using appropriate technology and by writing the code himself. Muhammad earned a Ph.D. degree in Computer Systems from Carleton University, Ottawa, Canada in 2012. He has worked for top companies like General Electrics, Eaton Corporation and Alcatel-Lucent. Currently, he is working for Nokia as a solution lead.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781801070119">https://packt.link/free-ebook/9781801070119 </a> </p>
